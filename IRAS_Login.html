@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width= auto, initial-scale=1.0"/>
+  <title>IRASYSTEM Login</title>
+  <style>
+   .my-image {
+      width: 120px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      display: flex;
+      margin: auto;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('BG2.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      width: 550px;
+	  height: auto;
+	  text-align: center;
+    }
+
+    .login-box h2 {
+	
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .login-box button {
+      width: 104%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-box button:hover {
+	 text-align: center;
+      background-color: #0056b3;
+    }
+	
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-box">
+  <img src="Iras.png" alt="My Image" class="my-image">
+    <h2>WELCOME TO IRASYSTEM</h2>
+    <form onsubmit="return handleLogin(event)">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault(); // Prevent actual form submission
+      // You can add basic validation here if needed
+
+      // Redirect to another page
+      window.location.href = "http://192.168.11.220/"; // Change to your target page
+      return false;
+    }
+  </script>
+
+</body>
+</html>
